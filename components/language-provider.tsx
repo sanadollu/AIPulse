@@ -58,7 +58,7 @@ const translations: Translations = {
   },
   "footer.description": {
     en: "Curated updates from the world of AI.",
-    tr: "Yapay zekâ dünyasından kürasyonlu güncellemeler.",
+    tr: "Yapay zeka dünyasından özenle seçilmiş güncellemeler.",
   },
 };
 
