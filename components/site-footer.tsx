@@ -1,41 +1,45 @@
+"use client"
+
 import Link from "next/link"
+import { useLanguage } from "@/components/language-provider"
 
 export function SiteFooter() {
+  const { t } = useLanguage()
+
   return (
     <footer className="w-full border-t border-border bg-muted/30">
-      <div className="container px-4 md:px-6 py-12 md:py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           {/* About Section */}
           <div className="md:col-span-2 space-y-4">
             <h3 className="text-lg font-bold">AI Pulse</h3>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-md">
-              Your trusted source for the latest AI news, research breakthroughs, and industry insights. 
-              We curate and deliver the most important developments in artificial intelligence.
+              {t("footer.description")}
             </p>
           </div>
 
           {/* Content Links */}
           <div className="space-y-4">
-            <h4 className="text-sm font-semibold">Content</h4>
+            <h4 className="text-sm font-semibold">{t("footer.content")}</h4>
             <ul className="space-y-2.5">
               <li>
                 <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Latest News
+                  {t("footer.latestNews")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Research
+                  {t("footer.research")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  AI Models
+                  {t("footer.models")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Policy & Ethics
+                  {t("footer.policy")}
                 </Link>
               </li>
             </ul>
@@ -43,34 +47,36 @@ export function SiteFooter() {
 
           {/* Company Links */}
           <div className="space-y-4">
-            <h4 className="text-sm font-semibold">Company</h4>
+            <h4 className="text-sm font-semibold">{t("footer.company")}</h4>
             <ul className="space-y-2.5">
               <li>
                 <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  About Us
+                  {t("footer.about")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Contact
+                  {t("footer.contact")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Privacy Policy
+                  {t("footer.privacy")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Terms of Service
+                  {t("footer.terms")}
                 </Link>
               </li>
             </ul>
           </div>
         </div>
+      </div>
 
-        {/* Bottom Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-12 pt-8 border-t border-border">
+      {/* Bottom Bar - Using same container classes */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 border-t border-border">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
             © 2025 AI Pulse. All rights reserved.
           </p>

@@ -22,7 +22,7 @@ interface NewsGridProps {
 export function NewsGrid({ items }: NewsGridProps) {
   if (items.length === 0) {
     return (
-      <div className="container px-4 md:px-6 py-16">
+      <div className="py-16">
         <div className="text-center">
           <p className="text-lg text-muted-foreground">No articles found matching your filters.</p>
         </div>
@@ -31,7 +31,7 @@ export function NewsGrid({ items }: NewsGridProps) {
   }
 
   return (
-    <section className="container px-4 md:px-6 py-12">
+    <section className="py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {items.map((item) => (
           <NewsCard key={item.id} item={item} />

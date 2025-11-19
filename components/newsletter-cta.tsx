@@ -3,8 +3,11 @@
 import { Mail } from 'lucide-react'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import { useLanguage } from "@/components/language-provider"
 
 export function NewsletterCTA() {
+  const { t } = useLanguage()
+
   return (
     <section className="w-full py-16 md:py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5">
       <div className="container px-4 md:px-6">
@@ -17,11 +20,10 @@ export function NewsletterCTA() {
           {/* Heading */}
           <div className="space-y-3">
             <h2 className="text-3xl md:text-4xl font-bold text-balance">
-              Never Miss an AI Update
+              {t("newsletter.title")}
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Get the most important AI news and insights delivered to your inbox every week. 
-              Join thousands of professionals staying ahead of the curve.
+              {t("newsletter.subtitle")}
             </p>
           </div>
 
@@ -29,17 +31,18 @@ export function NewsletterCTA() {
           <form className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
             <Input
               type="email"
-              placeholder="Enter your email"
+              placeholder={t("newsletter.emailPlaceholder")}
               className="flex-1"
               required
             />
             <Button type="submit" size="lg" className="sm:w-auto">
-              Subscribe Now
+              {t("newsletter.button")}
             </Button>
           </form>
 
+          {/* Privacy Note */}
           <p className="text-xs text-muted-foreground">
-            We respect your privacy. Unsubscribe at any time.
+            {t("newsletter.privacyNote")}
           </p>
         </div>
       </div>

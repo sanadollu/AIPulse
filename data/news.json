@@ -1,120 +1,381 @@
 [
   {
     "id": 1,
-    "slug": "gpt-5-breakthrough-announcement",
-    "title": "OpenAI Announces GPT-5: A Leap Forward in AI Reasoning",
-    "summary": "OpenAI unveils its latest language model with unprecedented reasoning capabilities and multimodal understanding, marking a significant milestone in artificial intelligence development.",
-    "url": "https://openai.com",
-    "tags": ["AI Models", "OpenAI", "GPT", "Research"],
+    "slug": "gpt-5-1-technical-prompting-guide",
+    "title": {
+      "en": "OpenAI releases a new technical prompting guide for GPT-5.1",
+      "tr": "OpenAI, GPT-5.1 için teknik odaklı yeni Prompting Guide yayımladı"
+    },
+    "lead": {
+      "en": "OpenAI publishes a detailed prompting guide aimed at making GPT-5.1’s reasoning more deterministic, controllable and low-latency across production workflows.",
+      "tr": "OpenAI, GPT-5.1’in akıl yürütme süreçlerini daha deterministik, yönetilebilir ve düşük gecikmeli hâle getirmek için hazırladığı kapsamlı Prompting Guide’ı yayımladı."
+    },
+    "summary": {
+      "en": "The guide outlines structured prompting approaches and reasoning-mode control techniques that improve predictability and stability in real-world pipelines.",
+      "tr": "Rehber, yapılandırılmış prompting yöntemleri ve reasoning modlarının kontrolü sayesinde gerçek dünya senaryolarında daha öngörülebilir ve stabil sonuçlar almayı mümkün kılıyor."
+    },
+    "url": "https://cookbook.openai.com/examples/gpt-5/gpt-5-1_prompting_guide",
+    "source_domain": "cookbook.openai.com",
+    "category": "product",
     "level": "teknik",
-    "category": "Research",
-    "image": "/placeholder.svg?height=600&width=1200",
-    "published_at": "2024-12-15T10:00:00Z",
-    "source_domain": "openai.com",
-    "isFeatured": true
+    "tags": [
+      "gpt-5-1",
+      "prompt-engineering",
+      "reasoning-modes",
+      "structured-prompting",
+      "schema-first",
+      "low-latency",
+      "agentic-workflows"
+    ],
+    "image": "/img/gpt-5-1-prompting-guide.jpg",
+    "published_at": "2025-03-14T00:00:00.000Z",
+    "body": {
+      "tr": [
+        {
+          "type": "paragraph",
+          "text": "OpenAI, GPT-5.1’in akıl yürütme süreçlerini daha deterministik, yönetilebilir ve düşük gecikmeli hâle getirmek için hazırladığı kapsamlı “Prompting Guide”ı yayımladı."
+        },
+        {
+          "type": "paragraph",
+          "text": "Rehber, modelin reasoning modlarının nasıl kontrol edileceğini ve geliştiricilerin yapılandırılmış çıktılarda daha öngörülebilir sonuç almasını sağlayan teknik yöntemleri açıklıyor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Yeni eklenen “none reasoning mode”, modelin dahili düşünme adımlarını devre dışı bırakarak gecikmeyi en aza indiriyor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Schema-first yaklaşımı, JSON ve diğer makine tarafından okunabilir formatlarda daha tutarlı sonuçlar üretilmesini sağlıyor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Çok turlu etkileşimlerde bağlam sürekliliğini korumak için persistence kalıpları öneriliyor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Reasoning modları otomatik değişmediği için doğru modun manuel seçilmesi gerekiyor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Doküman, GPT-5.1’i deterministik API çıktıları ve agentik iş akışları için daha dayanıklı bir yapı taşı olarak konumlandırıyor."
+        }
+      ],
+      "en": [
+        {
+          "type": "paragraph",
+          "text": "OpenAI has released a comprehensive ‘Prompting Guide’ designed to make GPT-5.1’s reasoning more deterministic, controllable, and low-latency for production systems."
+        },
+        {
+          "type": "paragraph",
+          "text": "The guide explains how to control the model’s reasoning modes and how structured prompting can improve stability and predictability."
+        },
+        {
+          "type": "paragraph",
+          "text": "A new ‘none reasoning mode’ disables internal reasoning traces to minimize latency."
+        },
+        {
+          "type": "paragraph",
+          "text": "The schema-first approach helps developers generate more consistent JSON and machine-readable outputs."
+        },
+        {
+          "type": "paragraph",
+          "text": "For multi-turn setups, the guide recommends persistence patterns to maintain contextual coherence."
+        },
+        {
+          "type": "paragraph",
+          "text": "Developers must explicitly choose the correct reasoning mode based on use case requirements."
+        },
+        {
+          "type": "paragraph",
+          "text": "OpenAI positions GPT-5.1 as a robust component for deterministic APIs and agentic workflow systems."
+        }
+      ]
+    }
   },
   {
     "id": 2,
-    "slug": "eu-ai-act-implementation",
-    "title": "EU AI Act Takes Effect: What It Means for Tech Companies",
-    "summary": "The European Union's comprehensive AI regulation begins implementation, setting new standards for AI safety, transparency, and accountability across the continent.",
-    "url": "https://europa.eu",
-    "tags": ["Policy", "Regulation", "EU", "Compliance"],
-    "level": "genel",
-    "category": "Policy",
-    "image": "/placeholder.svg?height=600&width=1200",
-    "published_at": "2024-12-14T14:30:00Z",
-    "source_domain": "europa.eu"
+    "slug": "kimi-k2-thinking-analysis-what-it-means-for-ai-competition",
+    "title": {
+      "en": "5 Thoughts on Kimi K2 Thinking — Nathan Lambert",
+      "tr": "Kimi K2 Thinking Üzerine 5 Düşünce — Nathan Lambert"
+    },
+    "lead": {
+      "en": "Moonshot AI’s Kimi K2 Thinking model brings 32B parameters and 256K context length, showcasing strong reasoning and signaling a rising open-model competition from China.",
+      "tr": "Moonshot AI’nin Kimi K2 Thinking modeli, 32 milyar parametre ve 256K bağlam uzunluğu ile güçlü akıl yürütme performansı sergiliyor ve Çin kaynaklı açık model rekabetinin arttığını gösteriyor."
+    },
+    "summary": {
+      "en": "Nathan Lambert analyzes Moonshot AI’s new K2 Thinking model, emphasizing its reasoning abilities, benchmark strength, INT4 deployment readiness, and its broader implications for global AI competition.",
+      "tr": "Nathan Lambert, Moonshot AI’nin yeni K2 Thinking modelini değerlendirerek akıl yürütme kapasitesi, benchmark performansı, INT4 hazırlığı ve küresel AI rekabetine etkilerini ele alıyor."
+    },
+    "url": "https://www.interconnects.ai/p/kimi-k2-thinking-what-it-means",
+    "source_domain": "interconnects.ai",
+    "category": "models",
+    "level": "teknik",
+    "tags": [
+      "kimi-k2",
+      "moonshot-ai",
+      "reasoning",
+      "benchmarks",
+      "china-ai",
+      "open-models",
+      "quantization"
+    ],
+    "image": "/img/kimi-k2.jpg",
+    "published_at": "2025-11-01T00:00:00.000Z",
+    "body": {
+      "en": [
+        {
+          "type": "heading",
+          "text": "Kimi K2 Thinking Overview",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Kimi K2 Thinking features 32B active parameters and a 256K context window, optimized for multi-step reasoning."
+        },
+        {
+          "type": "heading",
+          "text": "Reasoning Performance",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The model shows strong ability to chain multiple tool calls and maintain coherence across complex problem-solving tasks."
+        },
+        {
+          "type": "heading",
+          "text": "Deployment Readiness",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "INT4 quantization delivers server-grade latency improvements, making real deployment practical."
+        }
+      ],
+      "tr": [
+        {
+          "type": "heading",
+          "text": "Kimi K2 Thinking Genel Bakış",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Kimi K2 Thinking, 32 milyar parametre ve 256K bağlam penceresi ile çok aşamalı akıl yürütme için optimize edilmiştir."
+        },
+        {
+          "type": "heading",
+          "text": "Akıl Yürütme Performansı",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Model, birden fazla araç çağrısını zincirleme ve karmaşık görevlerde tutarlılığı koruma noktasında başarılıdır."
+        },
+        {
+          "type": "heading",
+          "text": "Dağıtım Hazırlığı",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "INT4 kuantizasyonu, sunucu düzeyinde gecikme iyileştirmeleri sağlayarak modelin gerçek dağıtım için uygun hâle gelmesini sağlar."
+        }
+      ]
+    }
   },
   {
     "id": 3,
-    "slug": "anthropic-claude-3-5-sonnet",
-    "title": "Anthropic Releases Claude 3.5 Sonnet with Enhanced Coding Abilities",
-    "summary": "The latest iteration of Claude demonstrates remarkable improvements in code generation, debugging, and technical problem-solving capabilities.",
-    "url": "https://anthropic.com",
-    "tags": ["AI Models", "Anthropic", "Claude", "Coding"],
-    "level": "teknik",
-    "category": "Models",
-    "image": "/placeholder.svg?height=600&width=1200",
-    "published_at": "2024-12-13T09:15:00Z",
-    "source_domain": "anthropic.com"
+    "slug": "political-even-handedness-in-ai-systems",
+    "title": {
+      "en": "Political Even-Handedness in AI Systems",
+      "tr": "AI Sistemlerinde Politik Tarafsızlık"
+    },
+    "lead": {
+      "en": "Anthropic examines how large-scale models can remain politically neutral while handling sensitive ideologies, viewpoints, and value-laden topics.",
+      "tr": "Anthropic, büyük ölçekli modellerin hassas politik konular ve değer yüklü tartışmalarla etkileşim kurarken tarafsız kalmasını nasıl sağlayabileceğini inceliyor."
+    },
+    "summary": {
+      "en": "Anthropic outlines a framework for political even-handedness, focusing on neutrality, bias mitigation techniques, and transparent evaluation of ideological asymmetries.",
+      "tr": "Anthropic, politik tarafsızlık için bir çerçeve sunarak tarafsızlık, önyargı azaltma teknikleri ve ideolojik asimetrilerin şeffaf değerlendirilmesi üzerine odaklanıyor."
+    },
+    "url": "https://www.anthropic.com/news/political-even-handedness",
+    "source_domain": "anthropic.com",
+    "category": "policy",
+    "level": "genel",
+    "tags": [
+      "anthropic",
+      "claude",
+      "alignment",
+      "bias",
+      "governance",
+      "policy",
+      "fairness"
+    ],
+    "image": "/img/political-even-handedness.jpg",
+    "published_at": "2025-02-01T00:00:00.000Z",
+    "body": {
+      "en": [
+        {
+          "type": "paragraph",
+          "text": "Anthropic proposes guidelines for reducing political bias in large AI systems while ensuring fair representation of diverse viewpoints."
+        },
+        {
+          "type": "paragraph",
+          "text": "The work highlights how ideological asymmetries can emerge during training and evaluation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Anthropic argues for transparent, reproducible processes to measure political balance."
+        },
+        {
+          "type": "paragraph",
+          "text": "The framework emphasizes stability across political spectra, avoiding systematic preference toward specific ideologies."
+        }
+      ],
+      "tr": [
+        {
+          "type": "paragraph",
+          "text": "Anthropic, büyük AI sistemlerinde politik önyargıyı azaltmak ve farklı görüşlerin adil şekilde temsil edilmesini sağlamak için yönergeler öneriyor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Çalışma, ideolojik asimetrilerin eğitim ve değerlendirme süreçlerinde nasıl ortaya çıkabileceğini vurguluyor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Anthropic, politik dengeyi ölçmek için şeffaf ve tekrarlanabilir süreçlerin gerekliliğini savunuyor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Çerçeve, belirli ideolojilere sistematik yakınlaşmadan kaçınarak politik yelpazede istikrarı vurguluyor."
+        }
+      ]
+    }
   },
   {
     "id": 4,
-    "slug": "google-gemini-2-0-multimodal",
-    "title": "Google Unveils Gemini 2.0: Next-Gen Multimodal AI",
-    "summary": "Google's newest AI model showcases groundbreaking multimodal capabilities, seamlessly processing text, images, audio, and video in real-time.",
-    "url": "https://deepmind.google",
-    "tags": ["AI Models", "Google", "Gemini", "Multimodal"],
-    "level": "teknik",
-    "category": "Research",
-    "image": "/placeholder.svg?height=600&width=1200",
-    "published_at": "2024-12-12T11:00:00Z",
-    "source_domain": "deepmind.google"
+    "slug": "workos-launches-api-keys-secure-account-access",
+    "title": {
+      "en": "WorkOS Introduces API Keys for Secure Account Access",
+      "tr": "WorkOS, Güvenli Hesap Erişimi için API Keys Özelliğini Tanıttı"
+    },
+    "lead": {
+      "en": "WorkOS launches new API Keys capabilities to simplify secure, cross-platform authentication flows for enterprise applications.",
+      "tr": "WorkOS, kurumsal uygulamalar için güvenli ve platformlar arası kimlik doğrulama süreçlerini basitleştiren yeni API Keys özelliğini tanıttı."
+    },
+    "summary": {
+      "en": "The new API Keys feature allows developers to implement secure server-side authentication with granular permissions and centralized key management.",
+      "tr": "Yeni API Keys özelliği, geliştiricilerin granüler izinler ve merkezi anahtar yönetimi ile güvenli sunucu tarafı kimlik doğrulaması uygulamasını sağlıyor."
+    },
+    "url": "https://workos.com/blog/introducing-workos-api-keys",
+    "source_domain": "workos.com",
+    "category": "product",
+    "level": "genel",
+    "tags": [
+      "workos",
+      "api-keys",
+      "authentication",
+      "security",
+      "enterprise"
+    ],
+    "image": "/img/workos-api-keys.jpg",
+    "published_at": "2025-01-10T00:00:00.000Z",
+    "body": {
+      "en": [
+        {
+          "type": "paragraph",
+          "text": "WorkOS introduces API Keys to simplify secure integration for enterprise developers."
+        },
+        {
+          "type": "paragraph",
+          "text": "The feature provides centralized management, granular permissions, and server-focused authentication flows."
+        },
+        {
+          "type": "paragraph",
+          "text": "Developers can rotate, revoke, and monitor keys without impacting user sessions."
+        }
+      ],
+      "tr": [
+        {
+          "type": "paragraph",
+          "text": "WorkOS, kurumsal geliştiriciler için güvenli entegrasyonu basitleştirmek amacıyla API Keys özelliğini tanıttı."
+        },
+        {
+          "type": "paragraph",
+          "text": "Özellik, merkezi yönetim, granüler izinler ve sunucu odaklı kimlik doğrulama akışları sunuyor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Geliştiriciler, kullanıcı oturumlarını etkilemeden anahtarları döndürebilir, iptal edebilir ve izleyebilir."
+        }
+      ]
+    }
   },
   {
     "id": 5,
-    "slug": "ai-healthcare-breakthrough",
-    "title": "AI System Detects Early-Stage Cancer with 95% Accuracy",
-    "summary": "Researchers develop an AI-powered diagnostic tool that outperforms traditional methods in detecting multiple types of cancer at early stages.",
-    "url": "https://nature.com",
-    "tags": ["Healthcare", "Medical AI", "Research", "Diagnostics"],
+    "slug": "stanford-ai-index-2025-key-insights",
+    "title": {
+      "en": "Stanford Releases AI Index 2025 — Key Insights",
+      "tr": "Stanford AI Index 2025 Raporu — Öne Çıkan Bulgular"
+    },
+    "lead": {
+      "en": "The Stanford HAI AI Index 2025 report highlights rapid model scaling, declining training costs, rising geopolitical pressure, and significant advances in multimodal capabilities.",
+      "tr": "Stanford HAI AI Index 2025 raporu, model ölçeklenmesindeki hızlı artışı, düşen eğitim maliyetlerini, artan jeopolitik baskıları ve çok modlu yeteneklerdeki önemli gelişmeleri öne çıkarıyor."
+    },
+    "summary": {
+      "en": "AI Index 2025 shows accelerated frontier model growth, increased government involvement, major corporate investments, and a shift toward efficiency-optimized training approaches.",
+      "tr": "AI Index 2025, frontier model büyümesindeki hızlanmayı, hükümetlerin artan rolünü, büyük kurumsal yatırımları ve verimlilik odaklı eğitim yaklaşımlarına geçişi ortaya koyuyor."
+    },
+    "url": "https://hai.stanford.edu/ai-index",
+    "source_domain": "hai.stanford.edu",
+    "category": "research",
     "level": "genel",
-    "category": "Healthcare",
-    "image": "/placeholder.svg?height=600&width=1200",
-    "published_at": "2024-12-11T08:45:00Z",
-    "source_domain": "nature.com"
-  },
-  {
-    "id": 6,
-    "slug": "meta-llama-3-1-release",
-    "title": "Meta's Llama 3.1 Goes Open Source with 405B Parameters",
-    "summary": "Meta releases its most powerful open-source language model yet, democratizing access to state-of-the-art AI technology for researchers and developers worldwide.",
-    "url": "https://ai.meta.com",
-    "tags": ["Open Source", "Meta", "Llama", "AI Models"],
-    "level": "derin",
-    "category": "Research",
-    "image": "/placeholder.svg?height=600&width=1200",
-    "published_at": "2024-12-10T13:20:00Z",
-    "source_domain": "ai.meta.com"
-  },
-  {
-    "id": 7,
-    "slug": "nvidia-ai-chip-breakthrough",
-    "title": "NVIDIA Announces Blackwell Ultra: 30x Faster AI Training",
-    "summary": "NVIDIA's next-generation AI chips promise unprecedented performance improvements, potentially revolutionizing the speed and cost of training large language models.",
-    "url": "https://nvidia.com",
-    "tags": ["Hardware", "NVIDIA", "Chips", "Infrastructure"],
-    "level": "teknik",
-    "category": "Hardware",
-    "image": "/placeholder.svg?height=600&width=1200",
-    "published_at": "2024-12-09T10:30:00Z",
-    "source_domain": "nvidia.com"
-  },
-  {
-    "id": 8,
-    "slug": "ai-job-market-2025",
-    "title": "Report: AI Creates More Jobs Than It Displaces in 2024",
-    "summary": "New employment data reveals that AI technologies have led to net job growth, with emerging roles in AI operations, ethics, and human-AI collaboration.",
-    "url": "https://weforum.org",
-    "tags": ["Jobs", "Economy", "Future of Work", "Research"],
-    "level": "genel",
-    "category": "Economy",
-    "image": "/placeholder.svg?height=600&width=1200",
-    "published_at": "2024-12-08T15:00:00Z",
-    "source_domain": "weforum.org"
-  },
-  {
-    "id": 9,
-    "slug": "deepmind-protein-folding-alphafold3",
-    "title": "AlphaFold 3 Predicts Protein-Drug Interactions with Unprecedented Accuracy",
-    "summary": "DeepMind's latest breakthrough in computational biology could accelerate drug discovery and development by years, potentially saving millions of lives.",
-    "url": "https://deepmind.google",
-    "tags": ["Research", "Biology", "DeepMind", "Healthcare"],
-    "level": "derin",
-    "category": "Research",
-    "image": "/placeholder.svg?height=600&width=1200",
-    "published_at": "2024-12-07T12:00:00Z",
-    "source_domain": "deepmind.google"
+    "tags": [
+      "stanford",
+      "ai-index",
+      "frontier-models",
+      "geopolitics",
+      "training-costs"
+    ],
+    "image": "/img/ai-index-2025.jpg",
+    "published_at": "2025-03-01T00:00:00.000Z",
+    "body": {
+      "en": [
+        {
+          "type": "paragraph",
+          "text": "The AI Index 2025 highlights continued acceleration in the scale of frontier models."
+        },
+        {
+          "type": "paragraph",
+          "text": "Geopolitical pressure and national regulatory agendas increasingly shape AI deployment strategies."
+        },
+        {
+          "type": "paragraph",
+          "text": "Corporate investment in AI infrastructure and safety research has significantly increased."
+        },
+        {
+          "type": "paragraph",
+          "text": "Efficiency-optimized training paradigms are becoming more prominent across labs."
+        }
+      ],
+      "tr": [
+        {
+          "type": "paragraph",
+          "text": "AI Index 2025, frontier modellerin ölçeklenmesindeki hızlanmayı vurguluyor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Jeopolitik baskı ve ulusal regülasyon gündemleri, AI dağıtım stratejilerini giderek daha fazla şekillendiriyor."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kurumsal AI altyapısı ve güvenlik araştırmalarına yapılan yatırımlar önemli ölçüde artmış durumda."
+        },
+        {
+          "type": "paragraph",
+          "text": "Verimlilik odaklı eğitim paradigmaları laboratuvarlar arasında daha belirgin hale geliyor."
+        }
+      ]
+    }
   }
 ]
